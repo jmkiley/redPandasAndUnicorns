@@ -80,7 +80,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     }
     
     func populateMap () {
-        let newYorkLocation = CLLocationCoordinate2DMake(locationCoordinates.coordinate.latitude, -locationCoordinates.coordinate.longitude)
+        let newYorkLocation = CLLocationCoordinate2DMake(locationCoordinates.coordinate.latitude, locationCoordinates.coordinate.longitude)
         // Drop a pin
         let dropPin = MKPointAnnotation()
         dropPin.coordinate = newYorkLocation
@@ -103,7 +103,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let dropPin1 = MKPointAnnotation()
         dropPin1.coordinate = museumLocation
         dropPin1.title = "National Museum of the American Indian"
-        dropPin1.subtitle = "Red Panda"
+        //dropPin1.subtitle = "Red Panda"
         map.addAnnotation(dropPin1)
         //        locationChoice = (place : "National Museum of the American Indian", latitude : 40.704001, longitude : -74.013725)
         locationCoordinates = CLLocation(latitude: 40.704001, longitude: -74.013725)
@@ -113,7 +113,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let dropPin2 = MKPointAnnotation()
         dropPin2.coordinate = woolworthBuildingLocation
         dropPin2.title = "The Woolworth Building"
-        dropPin2.subtitle = "Red Panda"
+        //dropPin2.subtitle = "Red Panda"
         map.addAnnotation(dropPin2)
         
         let washingtonSquareParkLocation = CLLocationCoordinate2DMake(40.730823, -73.997332)
@@ -121,7 +121,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let dropPin3 = MKPointAnnotation()
         dropPin3.coordinate = washingtonSquareParkLocation
         dropPin3.title = "Washington Square Park"
-        dropPin3.subtitle = "Red Panda"
+        //dropPin3.subtitle = "Red Panda"
         map.addAnnotation(dropPin3)
         
         
@@ -130,7 +130,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let dropPin4 = MKPointAnnotation()
         dropPin4.coordinate = brooklynBridgeLocation
         dropPin4.title = "Brooklyn Bridge"
-        dropPin4.subtitle = "Red Panda"
+        //dropPin4.subtitle = "Red Panda"
         map.addAnnotation(dropPin4)
         
         let flatironBuildingLocation = CLLocationCoordinate2DMake(40.741061, -73.989699)
@@ -138,7 +138,7 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         let dropPin5 = MKPointAnnotation()
         dropPin5.coordinate = flatironBuildingLocation
         dropPin5.title = "Flatiron Building"
-        dropPin5.subtitle = "Red Panda"
+        //dropPin5.subtitle = "Red Panda"
         map.addAnnotation(dropPin5)
         
     }

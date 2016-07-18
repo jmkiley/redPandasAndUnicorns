@@ -137,7 +137,7 @@
 				TargetAttributes = {
 					1B6365A71D344DF900472F64 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 85826LGZGV;
+						DevelopmentTeam = L2YWSL9AVF;
 					};
 				};
 			};
@@ -349,7 +349,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MapProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FIS4.MapProj;
+				PRODUCT_BUNDLE_IDENTIFIER = FIS5.MapProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -365,7 +365,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MapProj/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = FIS4.MapProj;
+				PRODUCT_BUNDLE_IDENTIFIER = FIS5.MapProj;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
