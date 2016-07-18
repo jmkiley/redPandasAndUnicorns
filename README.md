@@ -23,3 +23,4 @@ Keep track of helpful resources/tutorials here:
 <a href= "https://www.raywenderlich.com/76020/using-uigesturerecognizer-with-swift-tutorial">RW - UIGestureRecognizer (Swift 1)</a>
 
 <a href= "http://www.theappguruz.com/blog/ios-text-overlay-image">Text Overlay On Image</a>
+
