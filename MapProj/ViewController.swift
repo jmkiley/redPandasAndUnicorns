@@ -10,6 +10,7 @@ import UIKit
 import CoreLocation
 import MapKit
 import DKCamera
+import CameraManager
 
 class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate, UINavigationControllerDelegate {
     @IBOutlet weak var map: MKMapView!
@@ -246,22 +247,22 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     //    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
     //        print("\(error)")
     //    }
-    @IBAction func photoButton(sender: AnyObject) {
-        let camera = DKCamera()
-        
-        camera.didCancel = { () in
-            print("didCancel")
-            
-            self.dismissViewControllerAnimated(true, completion: nil)
-        }
-        
-        camera.didFinishCapturingImage = {(image: UIImage) in
-            print("didFinishCapturingImage")
-            print(image)
-            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-            self.dismissViewControllerAnimated(true, completion: nil)
-        }
-        self.presentViewController(camera, animated: true, completion: nil)
-    }
+//    @IBAction func photoButton(sender: AnyObject) {
+//        let camera = DKCamera()
+//        
+//        camera.didCancel = { () in
+//            print("didCancel")
+//            
+//            self.dismissViewControllerAnimated(true, completion: nil)
+//        }
+//        
+//        camera.didFinishCapturingImage = {(image: UIImage) in
+//            print("didFinishCapturingImage")
+//            print(image)
+//            UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+//            self.dismissViewControllerAnimated(true, completion: nil)
+//        }
+//        self.presentViewController(camera, animated: true, completion: nil)
+//    }
     
 }
