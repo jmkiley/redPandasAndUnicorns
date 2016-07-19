@@ -22,7 +22,7 @@ class TakeAPhoto : UIViewController {
     @IBOutlet weak var cancel: UIButton!
     
 //     Saves the camera's output
-    @IBAction func savePicture(sender: AnyObject) {
+//    @IBAction func savePicture(sender: AnyObject) {
 //        if let videoConnection = stillImageOutput.connectionWithMediaType(AVMediaTypeVideo) {
 //            stillImageOutput.captureStillImageAsynchronouslyFromConnection(videoConnection) {
 //                (imageDataSampleBuffer, error) -> Void in
