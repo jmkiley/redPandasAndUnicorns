@@ -43,7 +43,7 @@ class TakeAPhoto : UIViewController {
 //        self.picture.image = self.imageToSave
 //        
 //        
-    }
+//    }
 
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         print("hi")
