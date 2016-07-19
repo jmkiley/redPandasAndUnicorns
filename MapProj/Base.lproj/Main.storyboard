@@ -61,17 +61,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redpanda3d" translatesAutoresizingMaskIntoConstraints="NO" id="zKJ-j3-ABw">
+                                <rect key="frame" x="50" y="50" width="91" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="fWS-85-ddh"/>
+                                    <constraint firstAttribute="width" constant="91" id="wgS-gF-SKa"/>
+                                </constraints>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sT1-3W-a0B">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="600" id="fgz-qG-9h9"/>
-                                    <constraint firstAttribute="height" constant="600" id="tpA-fF-kt4"/>
-                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ap-k0-bj3">
                                 <rect key="frame" x="50" y="535" width="70" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="sPB-cA-rVM"/>
+                                    <constraint firstAttribute="width" constant="70" id="MpG-uR-gna"/>
                                 </constraints>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
@@ -85,25 +88,33 @@
                                     <action selector="savePicture:" destination="wFV-Ca-DWq" eventType="touchUpInside" id="kiO-Lx-vfa"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redpanda3d" translatesAutoresizingMaskIntoConstraints="NO" id="zKJ-j3-ABw">
-                                <rect key="frame" x="50" y="50" width="91" height="86"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfO-0W-L1d">
+                                <rect key="frame" x="233" y="535" width="152" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="86" id="C0w-Js-g4o"/>
-                                    <constraint firstAttribute="width" constant="91" id="etB-37-3Ns"/>
+                                    <constraint firstAttribute="width" constant="152" id="Bz5-Lv-pnf"/>
                                 </constraints>
-                            </imageView>
+                                <state key="normal" title="Take  A Picture!"/>
+                                <connections>
+                                    <action selector="openPreview:" destination="wFV-Ca-DWq" eventType="touchUpInside" id="Rme-mg-83p"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="1ap-k0-bj3" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leadingMargin" constant="30" id="2JM-Qb-U8p"/>
-                            <constraint firstItem="1ap-k0-bj3" firstAttribute="baseline" secondItem="85z-SY-xEu" secondAttribute="baseline" id="5MG-Lm-eWP"/>
-                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leadingMargin" constant="30" id="NX6-DQ-jiN"/>
-                            <constraint firstItem="sT1-3W-a0B" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leading" id="SX7-6w-6ND"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="85z-SY-xEu" secondAttribute="trailing" constant="6" id="Vfb-OJ-rWa"/>
-                            <constraint firstItem="FoR-TK-asQ" firstAttribute="top" secondItem="1ap-k0-bj3" secondAttribute="bottom" constant="35" id="cTF-NI-bSy"/>
-                            <constraint firstItem="sT1-3W-a0B" firstAttribute="bottom" secondItem="FoR-TK-asQ" secondAttribute="top" id="ikh-3N-ksc"/>
-                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="top" secondItem="I4W-8a-pL0" secondAttribute="bottom" constant="30" id="ojR-91-X3x"/>
+                            <constraint firstItem="lfO-0W-L1d" firstAttribute="baseline" secondItem="85z-SY-xEu" secondAttribute="baseline" id="1Nq-dK-WGc"/>
+                            <constraint firstAttribute="trailing" secondItem="sT1-3W-a0B" secondAttribute="trailing" id="FnB-J6-DhY"/>
+                            <constraint firstItem="lfO-0W-L1d" firstAttribute="top" secondItem="sT1-3W-a0B" secondAttribute="bottom" constant="-65" id="SK4-5s-WpD"/>
+                            <constraint firstItem="sT1-3W-a0B" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leading" id="VW7-9W-IOD"/>
+                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="leading" secondItem="1ap-k0-bj3" secondAttribute="leading" id="ccm-tf-z68"/>
+                            <constraint firstItem="1ap-k0-bj3" firstAttribute="baseline" secondItem="lfO-0W-L1d" secondAttribute="baseline" id="f23-Lz-E3X"/>
+                            <constraint firstItem="lfO-0W-L1d" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leading" constant="233" id="fGq-rW-riF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="85z-SY-xEu" secondAttribute="trailing" constant="6" id="lM5-05-aXn"/>
+                            <constraint firstItem="sT1-3W-a0B" firstAttribute="bottom" secondItem="FoR-TK-asQ" secondAttribute="top" id="qSb-cH-LIL"/>
+                            <constraint firstItem="FoR-TK-asQ" firstAttribute="top" secondItem="1ap-k0-bj3" secondAttribute="bottom" constant="35" id="rt1-xk-EmY"/>
+                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leadingMargin" constant="30" id="v3s-hB-Ve2"/>
+                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="top" secondItem="I4W-8a-pL0" secondAttribute="bottom" constant="30" id="xXt-QK-JcE"/>
+                            <constraint firstItem="sT1-3W-a0B" firstAttribute="top" secondItem="Dvp-oR-Aq4" secondAttribute="top" id="yZP-4H-Wb3"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="xdR-lt-SBA" appends="YES" id="zst-lE-hWD"/>
@@ -111,6 +122,7 @@
                     </view>
                     <connections>
                         <outlet property="cancel" destination="1ap-k0-bj3" id="wVR-wm-PcZ"/>
+                        <outlet property="openPreview" destination="lfO-0W-L1d" id="R1z-FD-Fws"/>
                         <outlet property="picture" destination="sT1-3W-a0B" id="O3s-bc-DGK"/>
                         <outlet property="redPanda" destination="zKJ-j3-ABw" id="UWf-Ed-6SX"/>
                         <outlet property="save" destination="85z-SY-xEu" id="ZxJ-NJ-ccu"/>
