@@ -61,6 +61,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sT1-3W-a0B">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="fgz-qG-9h9"/>
+                                    <constraint firstAttribute="height" constant="600" id="tpA-fF-kt4"/>
+                                </constraints>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ap-k0-bj3">
                                 <rect key="frame" x="50" y="535" width="70" height="30"/>
                                 <constraints>
@@ -79,30 +86,42 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redpanda3d" translatesAutoresizingMaskIntoConstraints="NO" id="zKJ-j3-ABw">
-                                <rect key="frame" x="93" y="64" width="91" height="86"/>
+                                <rect key="frame" x="50" y="50" width="91" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="86" id="C0w-Js-g4o"/>
                                     <constraint firstAttribute="width" constant="91" id="etB-37-3Ns"/>
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="1ap-k0-bj3" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leadingMargin" constant="30" id="2JM-Qb-U8p"/>
                             <constraint firstItem="1ap-k0-bj3" firstAttribute="baseline" secondItem="85z-SY-xEu" secondAttribute="baseline" id="5MG-Lm-eWP"/>
-                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leadingMargin" constant="73" id="NX6-DQ-jiN"/>
+                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leadingMargin" constant="30" id="NX6-DQ-jiN"/>
+                            <constraint firstItem="sT1-3W-a0B" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leading" id="SX7-6w-6ND"/>
                             <constraint firstAttribute="trailingMargin" secondItem="85z-SY-xEu" secondAttribute="trailing" constant="6" id="Vfb-OJ-rWa"/>
                             <constraint firstItem="FoR-TK-asQ" firstAttribute="top" secondItem="1ap-k0-bj3" secondAttribute="bottom" constant="35" id="cTF-NI-bSy"/>
-                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="top" secondItem="I4W-8a-pL0" secondAttribute="bottom" constant="44" id="ojR-91-X3x"/>
+                            <constraint firstItem="sT1-3W-a0B" firstAttribute="bottom" secondItem="FoR-TK-asQ" secondAttribute="top" id="ikh-3N-ksc"/>
+                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="top" secondItem="I4W-8a-pL0" secondAttribute="bottom" constant="30" id="ojR-91-X3x"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="xdR-lt-SBA" appends="YES" id="zst-lE-hWD"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="cancel" destination="1ap-k0-bj3" id="wVR-wm-PcZ"/>
+                        <outlet property="picture" destination="sT1-3W-a0B" id="O3s-bc-DGK"/>
                         <outlet property="redPanda" destination="zKJ-j3-ABw" id="UWf-Ed-6SX"/>
                         <outlet property="save" destination="85z-SY-xEu" id="ZxJ-NJ-ccu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kGp-VR-oBK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="xdR-lt-SBA">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" id="O6W-uM-yML"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1329" y="321"/>
         </scene>
@@ -111,4 +130,7 @@
         <image name="camera (1)" width="93" height="78"/>
         <image name="redpanda3d" width="48" height="44"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="nf2-WW-q18"/>
+    </inferredMetricsTieBreakers>
 </document>

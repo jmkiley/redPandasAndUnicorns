@@ -10,6 +10,7 @@
 		15BCB8B26ECD52FEB0233AFE /* Pods_MapProj.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A22C3A8A42092E2740ED24 /* Pods_MapProj.framework */; };
 		1739BB8C1D3C538200855F2B /* RegionMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1739BB8B1D3C538200855F2B /* RegionMonitoring.swift */; };
 		17F5BF121D3D63930094D74B /* TakeAPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F5BF111D3D63930094D74B /* TakeAPhoto.swift */; };
+		17F5BF151D3DB5270094D74B /* redpanda3d.png in Resources */ = {isa = PBXBuildFile; fileRef = 17F5BF141D3DB5270094D74B /* redpanda3d.png */; };
 		1B6365AC1D344DF900472F64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6365AB1D344DF900472F64 /* AppDelegate.swift */; };
 		1B6365AE1D344DF900472F64 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6365AD1D344DF900472F64 /* ViewController.swift */; };
 		1B6365B11D344DF900472F64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B6365AF1D344DF900472F64 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		0611E19F1AECEF93C6170E8C /* Pods-MapProj.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapProj.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapProj/Pods-MapProj.release.xcconfig"; sourceTree = "<group>"; };
 		1739BB8B1D3C538200855F2B /* RegionMonitoring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegionMonitoring.swift; sourceTree = "<group>"; };
 		17F5BF111D3D63930094D74B /* TakeAPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TakeAPhoto.swift; path = ../TakeAPhoto.swift; sourceTree = "<group>"; };
+		17F5BF141D3DB5270094D74B /* redpanda3d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redpanda3d.png; sourceTree = "<group>"; };
 		1B6365A81D344DF900472F64 /* MapProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B6365AB1D344DF900472F64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B6365AD1D344DF900472F64 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17F5BF131D3DA5820094D74B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				17F5BF141D3DB5270094D74B /* redpanda3d.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		1B63659F1D344DF900472F64 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +85,7 @@
 		1B6365AA1D344DF900472F64 /* MapProj */ = {
 			isa = PBXGroup;
 			children = (
+				17F5BF131D3DA5820094D74B /* Images */,
 				17F5BF111D3D63930094D74B /* TakeAPhoto.swift */,
 				1B6365AB1D344DF900472F64 /* AppDelegate.swift */,
 				1BADFADC1D358A53001482DE /* CustomPointAnnotation.swift */,
@@ -170,6 +181,7 @@
 				1B6365B61D344DF900472F64 /* LaunchScreen.storyboard in Resources */,
 				1B6365B31D344DF900472F64 /* Assets.xcassets in Resources */,
 				1B6365B11D344DF900472F64 /* Main.storyboard in Resources */,
+				17F5BF151D3DB5270094D74B /* redpanda3d.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
