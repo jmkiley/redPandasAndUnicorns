@@ -192,13 +192,10 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         if CLLocationManager.isMonitoringAvailableForClass(CLCircularRegion.self) {
             
             let title = String(locationChoice.0) //Sets up name of location
-            
-         //   center = CLLocationCoordinate2D(latitude: locationCoordinates.coordinate.latitude, longitude: locationCoordinates.coordinate.longitude) //Sets up center coordinates for the region
 
             
             
             let regionRadius = 200.0
-            //var arr = [CLCircularRegion]()
             arr.append(circleRegion)
             
             circleRegion = CLCircularRegion(center: CLLocationCoordinate2D(latitude: center.latitude, longitude: center.longitude), radius: regionRadius, identifier: title) //Creates a circular region!
@@ -256,36 +253,29 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
     
     func mapView(mapView: MKMapView, didUpdateUserLocation userLocation: MKUserLocation) {
         let testUserLocation = CLLocationCoordinate2DMake(userLocation.coordinate.latitude, userLocation.coordinate.longitude)
+        print(testUserLocation)
         for region in arr {
         if region.containsCoordinate(testUserLocation){
             photoButton.enabled = true
             photoButton.hidden = false
-        print("near \(region)")
+       // print("near \(region)")
             break
         }else{
             photoButton.enabled = false
             photoButton.hidden = true
-        print("not near \(region)changing user location - \(userLocation.coordinate.latitude) \(userLocation.coordinate.longitude)")
+        //print("not near \(region)changing user location - \(userLocation.coordinate.latitude) \(userLocation.coordinate.longitude)")
         }
         }
     }
 
     
     
-    //Method to enable photo button when you enter region
+
     func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        photoButton.enabled = true
-        photoButton.hidden = false
-
     }
-    // Disables the photo button when you leave the region
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
-        photoButton.enabled = false
-        photoButton.hidden = true
     }
-    //    func locationManager(manager: CLLocationManager!, didFailWithError error: NSError!) {
-    //        print("\(error)")
-    //    }
+
     
     
     
