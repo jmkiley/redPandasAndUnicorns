@@ -22,7 +22,9 @@ class TakeAPhoto : UIViewController {
     @IBOutlet weak var cancel: UIButton!
     
     @IBOutlet weak var openPreview: UIButton!
+    
     @IBAction func openPreview(sender: AnyObject) {
+//        self.redPanda.center = self.lastLocation
         self.save.hidden = false
         self.view.bringSubviewToFront(save)
         self.openPreview.hidden = true
@@ -34,11 +36,28 @@ class TakeAPhoto : UIViewController {
             }
         
         }
+//        self.lastLocation = self.redPanda.center
         self.picture.image = self.imageToSave
         cameraSession.stopRunning()
     }
+//    var lastLocation = CGPoint()
+//    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        if let touch = touches.first {
+//            self.lastLocation = touch.locationInView(self.view)
+//        }
+//    }
+//    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+//        if let touch = touches.first {
+//            let location = touch.locationInView(self.view)
+//            self.redPanda.center = CGPoint(x: (location.x - self.lastLocation.x) + self.redPanda.center.x, y: (location.y - self.lastLocation.y) + self.redPanda.center.y)
+//            lastLocation = touch.locationInView(self.view)
+//        }
+//    }
+    
+
     //     Saves the camera's output
         @IBAction func savePicture(sender: AnyObject) {
+//            self.redPanda.center = self.lastLocation
             self.picture.image = self.imageToSave
             let layer = UIApplication.sharedApplication().keyWindow!.layer
             self.save.hidden = true
@@ -54,9 +73,11 @@ class TakeAPhoto : UIViewController {
             UIGraphicsEndImageContext()
             //Save it to the camera roll
             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-            self.save.hidden = false
+//            let alertView = UIAlertController(title: "Yay!", message: "Picture Saved To Camera Roll", preferredStyle: .Alert)
+//            self.save.hidden = false
             self.cancel.hidden = false
-    
+            viewDidLoad()
+            self.openPreview.hidden = false
         }
     
     override func viewDidLoad() {
@@ -69,6 +90,7 @@ class TakeAPhoto : UIViewController {
         self.save.hidden = true
         self.view.bringSubviewToFront(openPreview)
         self.view.bringSubviewToFront(cancel)
+//        self.lastLocation = self.redPanda.center
         
     }
     func viewDidAppear() {
@@ -88,18 +110,10 @@ class TakeAPhoto : UIViewController {
         self.preview.position = CGPoint(x: CGRectGetMidX(self.view.bounds), y: CGRectGetMidY(self.view.bounds))
         self.preview.videoGravity = AVLayerVideoGravityResize
         
-        //        let path = NSBundle.mainBundle().pathForResource("redpanda3d", ofType: "png")
-        //        let redPandaImage = UIImage(contentsOfFile: path!)!
-        //
         let redPandaLayer = CALayer(layer: self.redPanda)
         
         self.preview.addSublayer(redPandaLayer)
         self.preview.insertSublayer(redPandaLayer, above: self.preview)
-        //        redPandaLayer.bounds = CGRect(x: 50, y: 50, width: 91, height: 86)
-        //        redPandaLayer.position = CGPoint(x: CGRectGetMidX(redPandaLayer.bounds), y: CGRectGetMidY(redPandaLayer.bounds))
-        //
-        //        let redPandaAnimation = AVVideoCompositionCoreAnimationTool(postProcessingAsVideoLayer: redPandaLayer, inLayer: self.preview)
-        //        self.view.layer.insertSublayer(preview, atIndex: 0)
         
         return self.preview
     }()

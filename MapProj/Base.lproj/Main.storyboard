@@ -61,13 +61,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redpanda3d" translatesAutoresizingMaskIntoConstraints="NO" id="zKJ-j3-ABw">
-                                <rect key="frame" x="50" y="50" width="91" height="86"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="86" id="fWS-85-ddh"/>
-                                    <constraint firstAttribute="width" constant="91" id="wgS-gF-SKa"/>
-                                </constraints>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sT1-3W-a0B">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
@@ -98,22 +91,32 @@
                                     <action selector="openPreview:" destination="wFV-Ca-DWq" eventType="touchUpInside" id="Rme-mg-83p"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8F53F28F-A28A-408B-8932-1EED8BE1E676" translatesAutoresizingMaskIntoConstraints="NO" id="zKJ-j3-ABw">
+                                <rect key="frame" x="255" y="257" width="91" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="fWS-85-ddh"/>
+                                    <constraint firstAttribute="width" constant="91" id="wgS-gF-SKa"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="lfO-0W-L1d" firstAttribute="baseline" secondItem="85z-SY-xEu" secondAttribute="baseline" id="1Nq-dK-WGc"/>
+                            <constraint firstItem="sT1-3W-a0B" firstAttribute="height" secondItem="Dvp-oR-Aq4" secondAttribute="height" id="3uL-Yk-YGU"/>
                             <constraint firstAttribute="trailing" secondItem="sT1-3W-a0B" secondAttribute="trailing" id="FnB-J6-DhY"/>
                             <constraint firstItem="lfO-0W-L1d" firstAttribute="top" secondItem="sT1-3W-a0B" secondAttribute="bottom" constant="-65" id="SK4-5s-WpD"/>
+                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="centerY" secondItem="sT1-3W-a0B" secondAttribute="centerY" id="TnF-8v-0aZ"/>
                             <constraint firstItem="sT1-3W-a0B" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leading" id="VW7-9W-IOD"/>
-                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="leading" secondItem="1ap-k0-bj3" secondAttribute="leading" id="ccm-tf-z68"/>
+                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="leading" secondItem="1ap-k0-bj3" secondAttribute="leading" constant="205" id="ccm-tf-z68"/>
                             <constraint firstItem="1ap-k0-bj3" firstAttribute="baseline" secondItem="lfO-0W-L1d" secondAttribute="baseline" id="f23-Lz-E3X"/>
                             <constraint firstItem="lfO-0W-L1d" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leading" constant="233" id="fGq-rW-riF"/>
+                            <constraint firstItem="sT1-3W-a0B" firstAttribute="width" secondItem="Dvp-oR-Aq4" secondAttribute="width" id="jnx-63-BGy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="85z-SY-xEu" secondAttribute="trailing" constant="6" id="lM5-05-aXn"/>
                             <constraint firstItem="sT1-3W-a0B" firstAttribute="bottom" secondItem="FoR-TK-asQ" secondAttribute="top" id="qSb-cH-LIL"/>
                             <constraint firstItem="FoR-TK-asQ" firstAttribute="top" secondItem="1ap-k0-bj3" secondAttribute="bottom" constant="35" id="rt1-xk-EmY"/>
-                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leadingMargin" constant="30" id="v3s-hB-Ve2"/>
-                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="top" secondItem="I4W-8a-pL0" secondAttribute="bottom" constant="30" id="xXt-QK-JcE"/>
+                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leadingMargin" constant="235" id="v3s-hB-Ve2"/>
+                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="top" secondItem="I4W-8a-pL0" secondAttribute="bottom" constant="237" id="xXt-QK-JcE"/>
                             <constraint firstItem="sT1-3W-a0B" firstAttribute="top" secondItem="Dvp-oR-Aq4" secondAttribute="top" id="yZP-4H-Wb3"/>
                         </constraints>
                         <connections>
@@ -139,8 +142,217 @@
         </scene>
     </scenes>
     <resources>
+        <image name="8F53F28F-A28A-408B-8932-1EED8BE1E676" width="48" height="44">
+            <mutableData key="keyedArchiveRepresentation">
+YnBsaXN0MDDUAQIDBAUGOjtYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK0HCBEW
+GxwgISgrLjQ3VSRudWxs1AkKCwwNDg8QViRjbGFzc1xOU0ltYWdlRmxhZ3NWTlNSZXBzV05TQ29sb3KA
+DBIAwAAAgAKACtISCRMVWk5TLm9iamVjdHOhFIADgAnSEgkXGqIYGYAEgAWACBAA0h0JHh9fEBROU1RJ
+RkZSZXByZXNlbnRhdGlvboAGgAdPES4OTU0AKgAAIQj///8B////Af///wH///8B////Af///wH///8B
+////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B////Af///wH///8B
+////Af///wH///8B////Af///wH///8B////Af///wH///8B////Av+/vwT//6oD//+AAv///wH///8B
+////Av///wQAAAAA////Afn891z1/fWE9vn8Uf///yX///ko7//fEP///wUAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAB////Af//gAKAgAACAAAAAAAAAAAAAAAA
+AAAAAP//gAL//6oDAAAAAAAAAAD///8U/fj2iv/////////////1///89fX//PP1/v352f39/3j///8C
+qv+qA///qgP//6oD////Av///wEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AaqqqgOqqlUD
+gIAAAgAAAAIAAAAC//8AAf//AAH//wAB//8AAf8AAAH/AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+////Iv///Fj///8p////AgAAAAAAAAAAAAAAAPr67mz9+urp///u//j93/30+tT6+f7S/vj60P/5+Nv/
+//////7+/8YAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAgIACqv+qA////wKA/4AC////Av///wH//6oD
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///wH///8G
+///eH//7wT7ZxoaH1cCY5OXNsv/n1Kfx+++mvv/7v4z//8x99vvUs/r/2//3/9X/7//H/fH9vP/y/bn/
+7/24/+78uf70/cj8+//i//b/6cL39+x6+P3hm/X923/2/ed2+Pj4Jv///woAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAA////C///5kj/9sGI8einpuPRhqXu3pCo//Spqf/5rqv/+66t/vmgrv/2ja//73+x
+/up4tP/ph7n+5ojD9uqA69vSdv+aizn/l4Q2/4N1AP2KeyP/oIs4/92/f////LL////F/+77t/3o+rX9
+6/ml/+zyj//r8JD/5/Wj/+r8t//o9rv99v/W//f/5MP4/Oj////f//n/0P/7/97/9vvf9vX518j4+9Ws
++fvaffr/5zb3/+8g+PjwI/b2/xv//+xC//TIyOXXmf+zpl3/opk9/5qNH/+Xjiz/281c///tY///6lj/
+++NK///fM//+1Rb//9cW///dMf/wuhT/9NEm/7qvGv+vujn8xtVP/brOR/+uxVT+k5w1/GdBAPzApFT8
++fec/PH/qf/m8ZD/6eVz/93KT//q21//5uqB/+j2qv/x+rz9/v/Z//v/6cPy+9X59P/F/O/7u/zs9bz9
+9P29//z/tf///8D////H/+3/w/rz/dru+/3n8P/+3ur+7rD/zrho/3JoAP56jiD8mrZT+5q2Q/x6oy38
+oqcF/PnRD/z8wgD8/csJ/PfBA/z6wQ/8/8se/Pi/JPzfmyb84rUj/trLM/+fuhH/ocsB/63RD/+n0CP/
+uNVE/6mwQf9yawX/4uFn//f0gv/f2U3/5so+/7iGFP/Trzr/5eJo/+37n//x+rL9///R//785MTw/Mj7
+7Pm7/+j0tf/u+bL/5fSQ/t/vcP3l73z76O+T/Oj1n//x+8X///zD///umP/St0P/hnMg/ZSqUP+axlv/
+q81z/53CQ/+LvSX/t8ka//bTF//6wBD//80S//3FAP/8wQf//MgN/+y8Kf+cZSD/uYkK/+rMJ//Z2yD/
+vtoT/7XWFf+v3yH/ze5W/9XXY/+Wgy3/7+p7//Dtff/v41D/6MA6/30yAP9/TAD/4dx7/+3/rv/r/Lj8
++//J//b+1q/x/MH78frA/+z3sf/q957/5Ohy/+TWVf/Jrzj/4c9U/9ngaf7p75v++/uj/vbYaf6yhQv+
+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
+/Pra///86f/8/+b//P/T//z/t//37Gr//eA2//fXGf/7wBj/+50g/8NaAP+3lXr/6OC2/v//0v/0/N/q
+3///CAAAAAD//4ACAAAAAPTyznLx+7P/3faa/dbqm//N1IH/dXw0/z0rAP/hmSj/9IUQ//eMHP/4mBz/
++acA//TNPP/x8pb/8/y8//f8xP/1/cD/8v+h//v8d///0SP/8ZQJ/+aOA//zwBD/+8kX//i5Ef/rnBL/
+6q0D//LhQ///9YX/+/SL///zj///75H///OL//71ff/55Vb/+t82//XbAP/1wAD//KIT/+hrEP+8VQD/
+oWEA/fzjov///+bf5v//CgAAAAD//4ACAAAAAP/27Rzs9Lnq4Pym/9Xunf7Z3Ib/mZE5/49dKP/zmjD/
++owN//qdIf/7rRn/+LAH/+y8Hf/m0Vf/6d5o//PneP/1633/9PBh//zxRv/94SP/98kd//K7Cv/zvAP/
+/tIR///MFf/zuRj/8MEA//bXKv/54Eb/69U0/9qpOf/amjv/9bJD//vSS//z53P///aR//7yjv/554D/
+/9VZ//qqMP/VcgD/z24A/ey/bP//+9y/AAAAAAAAAAAAAAAA////AQAAAADx88+W6Pe8/9ztqPy6q2b/
+040v/8Y7Gv/oXBH//nsO//iNCP/0ogD/8K0F/+GxB//fuw7/5sEV/+O4Iv/hsSz/8sY1//fVHf/34Bv/
+8dcW//HJCP/+yA//98YF//rMEv/71hP//NQE//TKGf/svCn/q3cC/655NP/Nkzj/uVoA/9+iNP/98o3/
++/7I///53v///eD///vF///qrf//3Zf//8dx/fDJe//699nI////AQAAAAAAAAAA////AgAAAAD/+Ook
+6+256NDRjv96PB/9z0UH//pFFv/3Twb/93MI//GYB//tuAT/7MMa/+m9F//isR//t4AY/4lQFP+ITzL/
+lVgJ/9ahLv/twR3/8MkC//TMB//61BT/+tMf//ziSf//8mT/+t07//HDKf/JhRX/rm06/9GuYf/w0mH/
+7rpI/7FXAP/4xW////vA////6v/8+v////r7///+9f/7/+z///7S/f/zyf/59N3f////DwAAAAAAAAAA
+AAAAAKqqqgMAAAAA+PG3SpKETvqZQAD/0lcZ/s5NEP/neQr/96sc//DKR//j1kT/7dpJ//zRMP/fnx//
+djUZ/7yaeP/StIP/xZxM/41GAP/RfRr/5qYM//PQJv/35Vz//vBr//j5jP///77/++WG/9mmGv/CZyT/
+zoo7/wAAAP95byn//MZZ/8E6AP/jdiT//Mtv///yvP/8/fP//vv8//v8+v/2////+f/0//z/8/z///T/
+//PgqoD//wIAAAAAAAAAAP//gAIAAAAArKGHMYxjMPnhkBn/+qEb/vK3Mv/xylD/9t2A//fsk//s6X//
+7+Ja//bEMf+qWQD/q4hp/5WCYf8ADQD/47Nb/7N3Of+QAAD/0H8A//PXR//4/qz///vG//370////vD/
+//nW/+a0Zf+iAAD/xGs4/3k5If+yeUL/2IJD/9IyAP/2ehv/85oL//TDbv///tj/9/78//799f/++/n/
+//r8//38//7//vP//fnj+Pb/7jsAAAAAAAAAAIAAAAIAAAAAuaRTe8mXEv/5yEr9/N16//noiv/v8pz/
+6++2//fyuP/y4Ib/88E4/+uAHP+oAAD/nGhK/6R2Tv9oMwb/1pJa/6FWKv+WFAD/8btj//72qP/2/+j/
+//70///7+P/9+/n//f/3///x0v/el3n/ogAA/7kNAP/FNxH/4FUf//5/KP//kS///Ign/+2KF///2qf/
+/f/8//n8/v/8/vT///z8///7///9/fT8/v/f//f336kAAAAAAAAAAIAAAAIAAAAA0bxWq+fFQf/z5H78
+7vat/+v4wP/o+sL/7vvJ//bvrP/swFT/7IUA//1qEv/jSRH/sh4A/6M+Fv+sTSv/oBoF/6YeAP/lsGH/
+//Wi//n92v/7/Pn/+v72//r++f/5/vn/+P39///8////9uz/68e8/+ScgP/cWxb/6kAA//VaAP/uVAD/
+7lEL/+lLAP/ugEX//+nH///+8f/6/vX//P38//79/v/+/fP8///c//j1zrUAAAAA////AQAAAAD///8H
+4deAxfPtkP/x9LD97Pa3/+j8wv/t+cf/9P3F//zljv/wlSX/8lgM//9qFP//cyH/+WMw/90+HP+7AAD/
+zmIl//S6d///8ar/+P2///L82//5/+z////0/////P///////Pv////5/f//+/r////2///85P//4sX/
+8Lyj/+mpjf/fjl3/33QX/+VXFP/RGgD/541L///ksv///ez//Pv///v+9f/8/fL9///h//v3x78AAAAA
+////AgAAAAD/9cIy7uWI9+zylv/u+cL+9vnF//b8vf/z/Mb///yx///BaP/hPwD/8joa/9AXAP/CPAD/
+vEwA/8BLB//dj0z//9yM///9u//7/c//+/vR//v94P///fH//uLZ/+fHuP/w3tj///r6//39/f/8/Pn/
++/3x//r7+//4//z////3////7P//98z//+yX///HX//XcB3/zCoA/+yjT///88L//fv1//v+8//6/e/9
+///h//v5xsUAAAAA////AgAAAAD/9rs45dhs++XlcP/v+Kz+9vrA//P9wf/2/rz//92K/+V2K//EAAD/
+000U/9SCRP/VnlH/68R8//jamf//9K7/+f/B//L+0v/4/dn/+f3c////5f/XxrT/n3Vu/6FoXP+mbW//
+17u4///69P/3////9f/8//z9/f/5/vr/+v74//38+P/8/+X/+v+t///2c//6vET/3EId/9hvAP/21Yr/
+/v7f//z77f/6++P9+//Q//b0v78AAAAAqqqqAwAAAAD797885dp1/uXfbP/t9Zv+7/27/+38u//y4Iv/
+1n83/6sAAP/LbzH//s58///xnP/086P/8/Gz//T2wP/0/cX/9P3S//z73f/8+Nf/+v/j/9jgyP9uUyz/
+lXRh/6p6av+/fnj/u350/9K4rv//+/z/+/39///89v//+/v/+vz3//z/8v/6+c3///OB///dT//kmDD/
+yDwS/9VdAP/2yXL//vy8///6z////8r8//+8/+3vtJ0AAAAA//+qAwAAAAD29rtT5+CA/+vnh/7u96X/
+7fm3//Hqmf/sqkX/wjAA/8hWHf/9y2f/+vea/+31qv/v+bX/7/3D/+34y//x/cf/9P/T//f73v/7+97/
++vve/5mZgP9vOhL/imE9/4xcMP+RWTX/kV9I/35eUv/66ub///z9//z8/P/8+/7//vn9///83f/06Ij/
+/9hL/+OOGv++OQD/xTgB/954I///3mr/+PCG//vzkP//8pD6//+o//LyvIoAAAAAgIAAAgAAAADg24mc
+4Ntd/+LnfPzl7pv/7eys/+7Yfv/Wfyn/syAA/9x+Lf/50FD/8O13/+/sk//k34P/6vSl//H8zf/t+M3/
+9PzT//T92f/z/9r/+fzX/6KYcf85AAD/Xjkc/2IxEP9cNA//RiUA/2lTPP/279r////5//v8/P/3/vr/
+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
+AYQAAABsd3RwdAAAAfAAAAAUYmtwdAAAAgQAAAAUclhZWgAAAhgAAAAUZ1hZWgAAAiwAAAAUYlhZWgAA
+AkAAAAAUZG1uZAAAAlQAAABwZG1kZAAAAsQAAACIdnVlZAAAA0wAAACGdmlldwAAA9QAAAAkbHVtaQAA
+A/gAAAAUbWVhcwAABAwAAAAkdGVjaAAABDAAAAAMclRSQwAABDwAAAgMZ1RSQwAABDwAAAgMYlRSQwAA
+BDwAAAgMdGV4dAAAAABDb3B5cmlnaHQgKGMpIDE5OTggSGV3bGV0dC1QYWNrYXJkIENvbXBhbnkAAGRl
+c2MAAAAAAAAAEnNSR0IgSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAASc1JHQiBJRUM2MTk2Ni0yLjEAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFhZWiAAAAAAAADzUQAB
+AAAAARbMWFlaIAAAAAAAAAAAAAAAAAAAAABYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAA
+t4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9kZXNjAAAAAAAAABZJRUMgaHR0cDovL3d3dy5pZWMuY2gA
+AAAAAAAAAAAAABZJRUMgaHR0cDovL3d3dy5pZWMuY2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAZGVzYwAAAAAAAAAuSUVDIDYxOTY2LTIuMSBEZWZhdWx0IFJHQiBjb2xv
+dXIgc3BhY2UgLSBzUkdCAAAAAAAAAAAAAAAuSUVDIDYxOTY2LTIuMSBEZWZhdWx0IFJHQiBjb2xvdXIg
+c3BhY2UgLSBzUkdCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGRlc2MAAAAAAAAALFJlZmVyZW5jZSBWaWV3
+aW5nIENvbmRpdGlvbiBpbiBJRUM2MTk2Ni0yLjEAAAAAAAAAAAAAACxSZWZlcmVuY2UgVmlld2luZyBD
+b25kaXRpb24gaW4gSUVDNjE5NjYtMi4xAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB2aWV3AAAAAAAT
+pP4AFF8uABDPFAAD7cwABBMLAANcngAAAAFYWVogAAAAAABMCVYAUAAAAFcf521lYXMAAAAAAAAAAQAA
+AAAAAAAAAAAAAAAAAAAAAAKPAAAAAnNpZyAAAAAAQ1JUIGN1cnYAAAAAAAAEAAAAAAUACgAPABQAGQAe
+ACMAKAAtADIANwA7AEAARQBKAE8AVABZAF4AYwBoAG0AcgB3AHwAgQCGAIsAkACVAJoAnwCkAKkArgCy
+ALcAvADBAMYAywDQANUA2wDgAOUA6wDwAPYA+wEBAQcBDQETARkBHwElASsBMgE4AT4BRQFMAVIBWQFg
+AWcBbgF1AXwBgwGLAZIBmgGhAakBsQG5AcEByQHRAdkB4QHpAfIB+gIDAgwCFAIdAiYCLwI4AkECSwJU
+Al0CZwJxAnoChAKOApgCogKsArYCwQLLAtUC4ALrAvUDAAMLAxYDIQMtAzgDQwNPA1oDZgNyA34DigOW
+A6IDrgO6A8cD0wPgA+wD+QQGBBMEIAQtBDsESARVBGMEcQR+BIwEmgSoBLYExATTBOEE8AT+BQ0FHAUr
+BToFSQVYBWcFdwWGBZYFpgW1BcUF1QXlBfYGBgYWBicGNwZIBlkGagZ7BowGnQavBsAG0QbjBvUHBwcZ
+BysHPQdPB2EHdAeGB5kHrAe/B9IH5Qf4CAsIHwgyCEYIWghuCIIIlgiqCL4I0gjnCPsJEAklCToJTwlk
+CXkJjwmkCboJzwnlCfsKEQonCj0KVApqCoEKmAquCsUK3ArzCwsLIgs5C1ELaQuAC5gLsAvIC+EL+QwS
+DCoMQwxcDHUMjgynDMAM2QzzDQ0NJg1ADVoNdA2ODakNww3eDfgOEw4uDkkOZA5/DpsOtg7SDu4PCQ8l
+D0EPXg96D5YPsw/PD+wQCRAmEEMQYRB+EJsQuRDXEPURExExEU8RbRGMEaoRyRHoEgcSJhJFEmQShBKj
+EsMS4xMDEyMTQxNjE4MTpBPFE+UUBhQnFEkUahSLFK0UzhTwFRIVNBVWFXgVmxW9FeAWAxYmFkkWbBaP
+FrIW1hb6Fx0XQRdlF4kXrhfSF/cYGxhAGGUYihivGNUY+hkgGUUZaxmRGbcZ3RoEGioaURp3Gp4axRrs
+GxQbOxtjG4obshvaHAIcKhxSHHscoxzMHPUdHh1HHXAdmR3DHeweFh5AHmoelB6+HukfEx8+H2kflB+/
+H+ogFSBBIGwgmCDEIPAhHCFIIXUhoSHOIfsiJyJVIoIiryLdIwojOCNmI5QjwiPwJB8kTSR8JKsk2iUJ
+JTglaCWXJccl9yYnJlcmhya3JugnGCdJJ3onqyfcKA0oPyhxKKIo1CkGKTgpaymdKdAqAio1KmgqmyrP
+KwIrNitpK50r0SwFLDksbiyiLNctDC1BLXYtqy3hLhYuTC6CLrcu7i8kL1ovkS/HL/4wNTBsMKQw2zES
+MUoxgjG6MfIyKjJjMpsy1DMNM0YzfzO4M/E0KzRlNJ402DUTNU01hzXCNf02NzZyNq426TckN2A3nDfX
+OBQ4UDiMOMg5BTlCOX85vDn5OjY6dDqyOu87LTtrO6o76DwnPGU8pDzjPSI9YT2hPeA+ID5gPqA+4D8h
+P2E/oj/iQCNAZECmQOdBKUFqQaxB7kIwQnJCtUL3QzpDfUPARANER0SKRM5FEkVVRZpF3kYiRmdGq0bw
+RzVHe0fASAVIS0iRSNdJHUljSalJ8Eo3Sn1KxEsMS1NLmkviTCpMcky6TQJNSk2TTdxOJU5uTrdPAE9J
+T5NP3VAnUHFQu1EGUVBRm1HmUjFSfFLHUxNTX1OqU/ZUQlSPVNtVKFV1VcJWD1ZcVqlW91dEV5JX4Fgv
+WH1Yy1kaWWlZuFoHWlZaplr1W0VblVvlXDVchlzWXSddeF3JXhpebF69Xw9fYV+zYAVgV2CqYPxhT2Gi
+YfViSWKcYvBjQ2OXY+tkQGSUZOllPWWSZedmPWaSZuhnPWeTZ+loP2iWaOxpQ2maafFqSGqfavdrT2un
+a/9sV2yvbQhtYG25bhJua27Ebx5veG/RcCtwhnDgcTpxlXHwcktypnMBc11zuHQUdHB0zHUodYV14XY+
+dpt2+HdWd7N4EXhueMx5KnmJeed6RnqlewR7Y3vCfCF8gXzhfUF9oX4BfmJ+wn8jf4R/5YBHgKiBCoFr
+gc2CMIKSgvSDV4O6hB2EgITjhUeFq4YOhnKG14c7h5+IBIhpiM6JM4mZif6KZIrKizCLlov8jGOMyo0x
+jZiN/45mjs6PNo+ekAaQbpDWkT+RqJIRknqS45NNk7aUIJSKlPSVX5XJljSWn5cKl3WX4JhMmLiZJJmQ
+mfyaaJrVm0Kbr5wcnImc951kndKeQJ6unx2fi5/6oGmg2KFHobaiJqKWowajdqPmpFakx6U4pammGqaL
+pv2nbqfgqFKoxKk3qamqHKqPqwKrdavprFys0K1ErbiuLa6hrxavi7AAsHWw6rFgsdayS7LCszizrrQl
+tJy1E7WKtgG2ebbwt2i34LhZuNG5SrnCuju6tbsuu6e8IbybvRW9j74KvoS+/796v/XAcMDswWfB48Jf
+wtvDWMPUxFHEzsVLxcjGRsbDx0HHv8g9yLzJOsm5yjjKt8s2y7bMNcy1zTXNtc42zrbPN8+40DnQutE8
+0b7SP9LB00TTxtRJ1MvVTtXR1lXW2Ndc1+DYZNjo2WzZ8dp22vvbgNwF3IrdEN2W3hzeot8p36/gNuC9
+4UThzOJT4tvjY+Pr5HPk/OWE5g3mlucf56noMui86Ubp0Opb6uXrcOv77IbtEe2c7ijutO9A78zwWPDl
+8XLx//KM8xnzp/Q09ML1UPXe9m32+/eK+Bn4qPk4+cf6V/rn+3f8B/yY/Sn9uv5L/tz/bf//0iIjJCVa
+JGNsYXNzbmFtZVgkY2xhc3Nlc18QEE5TQml0bWFwSW1hZ2VSZXCjJCYnWk5TSW1hZ2VSZXBYTlNPYmpl
+Y3TSIiMpKldOU0FycmF5oikn0iIjLC1eTlNNdXRhYmxlQXJyYXmjLCkn0y8wCTEyM1dOU1doaXRlXE5T
+Q29sb3JTcGFjZUQwIDAAEAOAC9IiIzU2V05TQ29sb3KiNSfSIiM4OVdOU0ltYWdlojgnXxAPTlNLZXll
+ZEFyY2hpdmVy0Tw9VHJvb3SAAQAIABEAGgAjAC0AMgA3AEUASwBUAFsAaABvAHcAeQB+AIAAggCHAJIA
+lACWAJgAnQCgAKIApACmAKgArQDEAMYAyC7aLt8u6i7zLwYvCi8VLx4vIy8rLy4vMy9CL0YvTS9VL2Iv
+Zy9pL2svcC94L3svgC+IL4svnS+gL6UAAAAAAAACAQAAAAAAAAA+AAAAAAAAAAAAAAAAAAAvpw
+</mutableData>
+        </image>
         <image name="camera (1)" width="93" height="78"/>
-        <image name="redpanda3d" width="48" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="nf2-WW-q18"/>
