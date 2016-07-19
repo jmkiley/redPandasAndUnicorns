@@ -61,16 +61,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="redpanda3d" translatesAutoresizingMaskIntoConstraints="NO" id="zKJ-j3-ABw">
-                                <rect key="frame" x="50" y="50" width="91" height="86"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="86" id="fWS-85-ddh"/>
-                                    <constraint firstAttribute="width" constant="91" id="wgS-gF-SKa"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sT1-3W-a0B">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ap-k0-bj3">
                                 <rect key="frame" x="50" y="535" width="70" height="30"/>
                                 <constraints>
@@ -91,29 +81,36 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lfO-0W-L1d">
                                 <rect key="frame" x="233" y="535" width="152" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="152" id="Bz5-Lv-pnf"/>
+                                    <constraint firstAttribute="width" constant="152" id="Apc-ed-nAA"/>
                                 </constraints>
                                 <state key="normal" title="Take  A Picture!"/>
                                 <connections>
                                     <action selector="openPreview:" destination="wFV-Ca-DWq" eventType="touchUpInside" id="Rme-mg-83p"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sT1-3W-a0B">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="original redpanda.png" translatesAutoresizingMaskIntoConstraints="NO" id="hJH-KL-li2">
+                                <rect key="frame" x="184" y="207" width="187" height="170"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="lfO-0W-L1d" firstAttribute="baseline" secondItem="85z-SY-xEu" secondAttribute="baseline" id="1Nq-dK-WGc"/>
+                            <constraint firstItem="lfO-0W-L1d" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leadingMargin" constant="213" id="2te-5O-KKR"/>
+                            <constraint firstItem="lfO-0W-L1d" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leading" constant="233" id="FID-Ej-TGc"/>
                             <constraint firstAttribute="trailing" secondItem="sT1-3W-a0B" secondAttribute="trailing" id="FnB-J6-DhY"/>
-                            <constraint firstItem="lfO-0W-L1d" firstAttribute="top" secondItem="sT1-3W-a0B" secondAttribute="bottom" constant="-65" id="SK4-5s-WpD"/>
                             <constraint firstItem="sT1-3W-a0B" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leading" id="VW7-9W-IOD"/>
-                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="leading" secondItem="1ap-k0-bj3" secondAttribute="leading" id="ccm-tf-z68"/>
-                            <constraint firstItem="1ap-k0-bj3" firstAttribute="baseline" secondItem="lfO-0W-L1d" secondAttribute="baseline" id="f23-Lz-E3X"/>
-                            <constraint firstItem="lfO-0W-L1d" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leading" constant="233" id="fGq-rW-riF"/>
+                            <constraint firstItem="FoR-TK-asQ" firstAttribute="top" secondItem="lfO-0W-L1d" secondAttribute="bottom" constant="35" id="W4i-Od-glL"/>
+                            <constraint firstItem="hJH-KL-li2" firstAttribute="centerX" secondItem="Dvp-oR-Aq4" secondAttribute="centerX" constant="-22.5" id="ZGb-Ml-F0C"/>
+                            <constraint firstItem="FoR-TK-asQ" firstAttribute="top" secondItem="85z-SY-xEu" secondAttribute="bottom" constant="35" id="aU6-gq-73C"/>
+                            <constraint firstItem="1ap-k0-bj3" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leadingMargin" constant="30" id="eaO-Ha-3BF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="85z-SY-xEu" secondAttribute="trailing" constant="6" id="lM5-05-aXn"/>
                             <constraint firstItem="sT1-3W-a0B" firstAttribute="bottom" secondItem="FoR-TK-asQ" secondAttribute="top" id="qSb-cH-LIL"/>
+                            <constraint firstItem="lfO-0W-L1d" firstAttribute="baseline" secondItem="1ap-k0-bj3" secondAttribute="baseline" id="rLR-c4-KUt"/>
                             <constraint firstItem="FoR-TK-asQ" firstAttribute="top" secondItem="1ap-k0-bj3" secondAttribute="bottom" constant="35" id="rt1-xk-EmY"/>
-                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="leading" secondItem="Dvp-oR-Aq4" secondAttribute="leadingMargin" constant="30" id="v3s-hB-Ve2"/>
-                            <constraint firstItem="zKJ-j3-ABw" firstAttribute="top" secondItem="I4W-8a-pL0" secondAttribute="bottom" constant="30" id="xXt-QK-JcE"/>
+                            <constraint firstItem="hJH-KL-li2" firstAttribute="centerY" secondItem="Dvp-oR-Aq4" secondAttribute="centerY" constant="-8" id="tTb-2g-p8j"/>
                             <constraint firstItem="sT1-3W-a0B" firstAttribute="top" secondItem="Dvp-oR-Aq4" secondAttribute="top" id="yZP-4H-Wb3"/>
                         </constraints>
                         <connections>
@@ -124,7 +121,7 @@
                         <outlet property="cancel" destination="1ap-k0-bj3" id="wVR-wm-PcZ"/>
                         <outlet property="openPreview" destination="lfO-0W-L1d" id="R1z-FD-Fws"/>
                         <outlet property="picture" destination="sT1-3W-a0B" id="O3s-bc-DGK"/>
-                        <outlet property="redPanda" destination="zKJ-j3-ABw" id="UWf-Ed-6SX"/>
+                        <outlet property="redPanda" destination="hJH-KL-li2" id="5Wz-bk-HQY"/>
                         <outlet property="save" destination="85z-SY-xEu" id="ZxJ-NJ-ccu"/>
                     </connections>
                 </viewController>
@@ -140,7 +137,7 @@
     </scenes>
     <resources>
         <image name="camera (1)" width="93" height="78"/>
-        <image name="redpanda3d" width="48" height="44"/>
+        <image name="original redpanda.png" width="187" height="170"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="nf2-WW-q18"/>

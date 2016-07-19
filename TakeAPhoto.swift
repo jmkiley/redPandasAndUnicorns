@@ -34,7 +34,9 @@ class TakeAPhoto : UIViewController {
             }
         
         }
+        
         self.picture.image = self.imageToSave
+        self.picture.autoresizesSubviews = true
         cameraSession.stopRunning()
     }
     //     Saves the camera's output
@@ -56,7 +58,8 @@ class TakeAPhoto : UIViewController {
             UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
             self.save.hidden = false
             self.cancel.hidden = false
-    
+            self.openPreview.hidden = false
+            viewDidLoad()
         }
     
     override func viewDidLoad() {
